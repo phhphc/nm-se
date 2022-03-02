@@ -16,7 +16,7 @@ const SignUp = () => {
 
             <form onSubmit={e => {
                 e.preventDefault();
-                axios.post(process.env.REACT_APP_API_URL + "user/signup", {
+                axios.post("/api/user/signup", {
                     username,
                     password,
                     faculty,
